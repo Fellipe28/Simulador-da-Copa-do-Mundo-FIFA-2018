@@ -8,7 +8,7 @@
 
 - 📫 Ache-me através do e-mail **fellipeyoshio14@gmail.com**
 
-- 📄 Conheça minhas experiências [https://www.linkedin.com/in/fellipe-yoshio-menezes-sugimoto/https://www.linkedin.com/in/fellipe-yoshio-menezes-sugimoto/https://www.linkedin.com/in/fellipe-yoshio-menezes-sugimoto/](https://www.linkedin.com/in/fellipe-yoshio-menezes-sugimoto/https://www.linkedin.com/in/fellipe-yoshio-menezes-sugimoto/https://www.linkedin.com/in/fellipe-yoshio-menezes-sugimoto/)
+- 📄 Conheça minhas experiências [https://www.linkedin.com/in/fellipe-yoshio-menezes-sugimoto)
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
