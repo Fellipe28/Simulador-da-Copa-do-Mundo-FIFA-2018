@@ -1,25 +1,67 @@
-<!--Welcome to GDB Online.GDB online is an online compiler and debugger tool for C
-  , C++, Python, Java, PHP, Ruby, Perl, C
-#, VB, Swift, Pascal, Fortran, Haskell, Objective-C, Assembly, HTML, CSS, JS, SQLite, Prolog.
-    Code, Compile, Run and Debug online from anywhere in world.
-    -->
+<!-- 
 
-<!DOCTYPE html>
-<html lang="pt-br">
+Welcome to GDB Online.
+GDB online is an online compiler and debugger tool for C, C++, Python, Java, PHP, Ruby, Perl,
+C#, VB, Swift, Pascal, Fortran, Haskell, Objective-C, Assembly, HTML, CSS, JS, SQLite, Prolog.
+Code, Compile, Run and Debug online from anywhere in world.
+
+-->
+
+<html lang="en">
     <head>
+        <!-- Required meta tags -->
         <meta charset="utf-8">
-        <meta http - equi="content-type" content="text/html; charset=utf-8"/>
-        <title>Loja de Artesanato</title>
-        <link rel="stylesheet" href="styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/Bootstrap/4.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/login-style.css">
+        <title>Login Page</title>
     </head>
     <body bgcolor="cyan">
-        <br><br><br>
-        <center><font size="14" face="verdana" color="blue"><b>Produtos de Artesanato</b></font></center>
-        <br><br><br>
         <div align="center">
-            <button type="button" class="btn2" onclick="window.location.href='login.html'">Acessar conta</button><br><br>
-            <button type="button" class="btn2" onclick="window.location.href='cadastro.html'">Fazer cadastro</button><br><br>
-            <button type="button" class="btn2" onclick="window.location.href='produtos.html'">Cadastrar produto</button>
+            <div>
+                <h2><center>Cadastre seu produto</center></h2>
+            </div>
+            <div class="col-8 col-md-3 col-xs-8 mx-auto l-form">
+                <form>
+                    <table>
+                        <tr>
+                            <td>Nome:</td>
+                            <td><input type="text" name="name" placeholder="Nome do produto" class="form-control i-form"></td>
+                        </tr>
+                        <tr>
+                            <td>Preço:</td>
+                            <td><input type="price" name="price" placeholder="Preço (R$)" class="form-control i-form"></td>
+                        </tr>
+                        <tr>
+                            <td>Fotos:</td>
+                            <td><input type="file" name="image" placeholder="Fotos" class="form-control i-form"></td>
+                        </tr>
+                        <tr>
+                            <td>Estoque:</td>
+                            <td><input type="number" name="stock" placeholder="Estoque" class="form-control i-form"></td>
+                        </tr>
+                        <tr>
+                            <td>Dimensões do produto:</td>
+                            <td><input type="text" name="length" placeholder="Comprimento (cm)" class="form-control i-form"><br>
+                                <input type="text" name="width" placeholder="Largura (cm)" class="form-control i-form"><br>
+                                <input type="text" name="height" placeholder="Altura (cm)" class="form-control i-form"></td>
+                        </tr>
+                        <tr>
+                            <td>Peso:</td>
+                            <td><input type="text" name="weight" placeholder="Peso (kg)" class="form-control i-form"></td>
+                        </tr>
+                        <tr>
+                            <td>Descrição:</td>
+                            <td><textarea name="description" placeholder="Descrição do produto" id=description rows="8" cols="40"></textarea></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+            <div>
+                <center><button type="button" class="btn btn-dark btn-md btn-block">Cadastrar produto</button></center>
+            </div>
         </div>
     </body>
 </html>
+
