@@ -6,62 +6,61 @@ C#, VB, Swift, Pascal, Fortran, Haskell, Objective-C, Assembly, HTML, CSS, JS, S
 Code, Compile, Run and Debug online from anywhere in world.
 
 -->
-
-<html lang="en">
+<!--<?php
+    if($_SERVER['REQUEST_METHOD'] == 'post'){
+        //$Cod_cliente = $_Post['Cod_cliente'];
+        $nome = $_Post['nome'];
+        $endereco = $_Post['endereco'];
+        $db = conexao::GetConexao();
+        $query = "insert into t_Cliente(nome,endereco) values ('{$nome}','{$endereco}')";
+        $rows = $db->exec($query);
+        if($rows){
+            echo "<script>alert('Cliente cadastrado com sucesso!');</script>";
+        }
+        else{
+            echo "<script>alert('Erro ao executar a operacao!');</script>";
+        }
+        echo "<script>window.location.href = 'pesquisar_cliente.php'</script>";
+    }
+?>-->
+<!DOCTYPE html>
+<html>
     <head>
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/Bootstrap/4.4.1/css/bootstrap.min.css">
-        <link rel="stylesheet" href="../css/login-style.css">
-        <title>Login Page</title>
+        <title>Escola Técnica</title>
+        <meta http-equiv="content-language" content="pt-br"/>
+        <meta name="description" content="Escola Técnica de Brazlândia-DF."/>
+        <meta name="authores" content="André, Kelbia, Dualci"/>
+        <link rel="stylesheet" Type="text/css" href="css/estilo.css"/>
     </head>
-    <body bgcolor="cyan">
-        <div align="center">
-            <div>
-                <h2><center>Cadastre seu produto</center></h2>
-            </div>
-            <div class="col-8 col-md-3 col-xs-8 mx-auto l-form">
-                <form>
+    <body>
+        <div id="principal">
+            <fieldset>
+                <legend align="center"><font size="5"><b>Cliente</b></font></legend>
+                <form name = "form" method="post" action=" " onsubmit=" ">
                     <table>
                         <tr>
-                            <td>Nome:</td>
-                            <td><input type="text" name="name" placeholder="Nome do produto" class="form-control i-form"></td>
+                            <td title="Campos com * são obrigatórios"><font size="3">Nome:</font></td>
+                            <td>
+                                <input type"text" name="nome" size="50" title="Campos com * são obrigatórios">
+                                <span id="style1">*</span>
+                            </td>
                         </tr>
                         <tr>
-                            <td>Preço:</td>
-                            <td><input type="price" name="price" placeholder="Preço (R$)" class="form-control i-form"></td>
-                        </tr>
-                        <tr>
-                            <td>Fotos:</td>
-                            <td><input type="file" name="image" placeholder="Fotos" class="form-control i-form"></td>
-                        </tr>
-                        <tr>
-                            <td>Estoque:</td>
-                            <td><input type="number" name="stock" placeholder="Estoque" class="form-control i-form"></td>
-                        </tr>
-                        <tr>
-                            <td>Dimensões do produto:</td>
-                            <td><input type="text" name="length" placeholder="Comprimento (cm)" class="form-control i-form"><br>
-                                <input type="text" name="width" placeholder="Largura (cm)" class="form-control i-form"><br>
-                                <input type="text" name="height" placeholder="Altura (cm)" class="form-control i-form"></td>
-                        </tr>
-                        <tr>
-                            <td>Peso:</td>
-                            <td><input type="text" name="weight" placeholder="Peso (kg)" class="form-control i-form"></td>
-                        </tr>
-                        <tr>
-                            <td>Descrição:</td>
-                            <td><textarea name="description" placeholder="Descrição do produto" id=description rows="8" cols="40"></textarea></td>
+                            <td title="Campos com * são obrigatórios"><font size="3">Endereço:</font></td>
+                            <td>
+                                <input type"text" name="endereco" size="50" title="Campos com * são obrigatórios">
+                                <span id="style1">*</span>
+                            </td>
                         </tr>
                     </table>
                 </form>
-            </div>
-            <div>
-                <center><button type="button" class="btn btn-dark btn-md btn-block">Cadastrar produto</button></center>
-            </div>
-        </div>
+            </fieldset>
+        </div> <!-- Fim da div#principal-->
     </body>
 </html>
-
+#principal{
+    width: 500px;
+    margin: 20px 80px 50px 50px;
+    float: left;
+    display: inline.;
+}
