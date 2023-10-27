@@ -1,0 +1,70 @@
+<!-- https://www.onlinegdb.com/edit/XV05TFhCJ#editor_6
+
+Welcome to GDB Online.
+GDB online is an online compiler and debugger tool for C, C++, Python, Java, PHP, Ruby, Perl,
+C#, VB, Swift, Pascal, Fortran, Haskell, Objective-C, Assembly, HTML, CSS, JS, SQLite, Prolog.
+Code, Compile, Run and Debug online from anywhere in world.
+
+-->
+<!DOCTYPE HTML>
+<html lang="pt-br">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="styles.css">
+        <title>Página de Cadastro de Usuário</title>
+    </head>
+    <body bgcolor="cyan">
+        <div align="center">
+            <div>
+                <br><br><br>
+                <center><font size="14" face="verdana" color="blue"><b>Faça seu cadastro</b></font></center>
+                <br><br><br>
+            </div>
+            <form method="post" action="processa.php">
+                <div class="col-8 col-md-3 col-xs-8 mx-auto l-form">
+                    <table>
+                        <tr>
+                            <td>Nome:</td>
+                            <td><input type="text" name="name" maxlength="40" required autofocus placeholder="Nome completo" class="fld"></td>
+                        </tr>
+                        <tr>
+                            <td>Endereço:</td>
+                            <td><input type="text" name="address" maxlength="100" placeholder="Endereço" class="fld"></td>
+                        </tr>
+                        <tr>
+                            <td>E-Mail:</td>
+                            <td><input type="email" name="email" maxlength="50" placeholder="E-Mail" class="fld"></td>
+                        </tr>
+                        <tr>
+                            <td>CPF:</td>
+                            <td><input type="text" name="cpf" maxlength="11" placeholder="CPF" class="fld"></td>
+                        </tr>
+                        <tr>
+                            <td>RG:</td>
+                            <td><input type="text" name="rg" maxlength="10" placeholder="RG" class="fld"></td>
+                        </tr>
+                        <tr>
+                            <td>Data de Nascimento:</td>
+                            <td><input type="date" name="date" placeholder="DD/MM/AAAA" class="fld"></td>
+                        </tr>
+                        <tr>
+                            <td>Telefone:</td>
+                            <td><input type="text" name="telephone" maxlength="15" placeholder="Telefone" class="fld"></td>
+                        </tr>
+                        <tr>
+                            <td>Senha:</td>
+                            <td><input type="password" name="password" maxlength="12" placeholder="Password" class="fld"></td>
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                    <input type="submit" value="Cadastrar" class="btn">
+                    <button type="button" class="btn" onclick="window.location.href='index.html'">Voltar</button>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

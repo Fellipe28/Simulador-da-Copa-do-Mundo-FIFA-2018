@@ -1,0 +1,31 @@
+* .btn {
+    width: 100px;
+    height: 30px;
+    border: 1px solid #ddd;
+    background-color: #2a578b;
+    color: #fff;
+    cursor: pointer;
+}
+* .btn2 {
+    width: 300px;
+    height: 100px;
+    border: 1px solid #ddd;
+    background-color: #2a578b;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+}
+* .fld {
+    width: 500px;
+    height: 30px;
+    border: 1px solid #ccc;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+* .txt{
+    width: 500px;
+    height: 200px;
+    border: 1px solid #ccc;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
