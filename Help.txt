@@ -1,0 +1,13 @@
+RUS  0 x 1  ARS
+EGI  2 x 3  URU
+RUS  4 x 5  EGI
+URU  6 x 7  ARS
+URU  8 x 9  RUS
+ARS 10 x 11 EGI
+
+0 x 1
+2 x 3
+0 x 2
+3 x 1
+3 x 0
+1 x 2
